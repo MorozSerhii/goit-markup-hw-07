@@ -1,0 +1,53 @@
+.our-advantages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .our-advantages .item-advantages{
+    width: calc((100% - 90px)/4);
+   
+  }
+  .our-advantages .item-advantages:last-child{
+    margin-right: 0;
+  } 
+  
+  
+  .advantages-list {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  .description-advantages {
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+  }
+  
+  .item-advantages::before{
+  display: block;
+  margin-bottom: 30px;
+  
+  content:"";
+  height: 120px;
+  background-size: 70px ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;;
+  border-radius: 4px;
+  }
+  .antena-icon::before{
+    background-image: url(../images/antenna\ 1.svg);
+  }
+  .clock-icon::before{
+    background-image: url(../images/clock\ 1.svg);
+  }
+  .diagram-icon::before{
+    background-image: url(../images/diagram\ 1.svg);
+  }
+  .cosmo-icon::before{
+    background-image: url(../images/astronaut\ 1.svg);
+  }
