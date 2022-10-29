@@ -49,6 +49,9 @@
   margin-right: 50px;
 }
 
+.menu__link{
+  &:link {color: $--primery-text-color;}
+}
 .menu__link {
   display: block;
   padding: 29px 0;

@@ -40,9 +40,6 @@ p {
 .links {
   text-decoration: none;
 }
-.links:link {
-  color: #212121;
-}
 .links:visited {
   color: #212121;
 }
@@ -144,6 +141,10 @@ body {
 
 .menu__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.menu__link:link {
+  color: #212121;
 }
 
 .menu__link {
@@ -307,19 +308,19 @@ body {
 }
 
 .benefits__icon-antena::before {
-  background-image: url(/images/antena.svg);
+  background-image: url(../images/antena.svg);
 }
 
 .benefits__icon-clock::before {
-  background-image: url(/images/clock.svg);
+  background-image: url(../images/clock.svg);
 }
 
 .benefits__icon-diagram::before {
-  background-image: url(/images/diagram.svg);
+  background-image: url(../images/diagram.svg);
 }
 
 .benefits__icon-cosmo::before {
-  background-image: url(/images/cosmo.svg);
+  background-image: url(../images/cosmo.svg);
 }
 
 .activity {

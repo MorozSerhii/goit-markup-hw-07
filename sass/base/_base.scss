@@ -37,7 +37,6 @@ p {
   }
   .links {
     text-decoration: none;
-    &:link{color: $--primery-text-color}
     &:visited{color: $--primery-text-color}
     &:active{color: $--primery-text-color;}
   }
