@@ -40,12 +40,6 @@ p {
 .links {
   text-decoration: none;
 }
-.links:visited {
-  color: #212121;
-}
-.links:active {
-  color: #212121;
-}
 
 body {
   background-color: #ffffff;
@@ -191,7 +185,7 @@ body {
   margin-left: auto;
 }
 
-.contacts__link {
+.contacts > .contacts__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -206,7 +200,7 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts__link:hover, .contacts__link:focus {
+.contacts > .contacts__link:hover, .contacts > .contacts__link:focus {
   color: #2196f3;
 }
 
@@ -308,19 +302,19 @@ body {
 }
 
 .benefits__icon-antena::before {
-  background-image: url(.././images/antena.svg);
+  background-image: url(../../images/antena.svg);
 }
 
 .benefits__icon-clock::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(../../images/clock.svg);
 }
 
 .benefits__icon-diagram::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url(../../images/diagram.svg);
 }
 
 .benefits__icon-cosmo::before {
-  background-image: url(../images/cosmo.svg);
+  background-image: url(../../images/cosmo.svg);
 }
 
 .activity {
