@@ -40,6 +40,9 @@ p {
 .links {
   text-decoration: none;
 }
+.links:link {
+  color: #212121;
+}
 .links:visited {
   color: #212121;
 }
