@@ -50,7 +50,7 @@
 }
 
 .menu__link{
-  &:link {color: $--primery-text-color;}
+  &:link,&:active,&:visited {color: $--primery-text-color;}
 }
 .menu__link {
   display: block;
@@ -91,9 +91,9 @@
   margin-left: auto;
 }
 
-.contacts>.contacts__link {
+.contacts__link {
   display: inline-flex;
-  color: $--second-text-color;
+  color:$--second-text-color;
   padding: 31px 0;
   font-weight: 500;
   line-height: 1.14;
