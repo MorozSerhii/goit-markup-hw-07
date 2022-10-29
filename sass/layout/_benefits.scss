@@ -1,18 +1,27 @@
-.our-advantages{
+.benefits-list{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .our-advantages .item-advantages{
+  .benefits-list__item {
     width: calc((100% - 90px)/4);
-   
+
+    &::before{
+      display: block;
+      margin-bottom: 30px; 
+      content:"";
+      height: 120px;
+      background-size: 70px ;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F5F4FA;;
+      border-radius: 4px;
+     
+      }
   }
-  .our-advantages .item-advantages:last-child{
-    margin-right: 0;
-  } 
-  
-  
-  .advantages-list {
+   
+ 
+  .benefits__title {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
@@ -21,33 +30,22 @@
     text-transform: uppercase;
   }
   
-  .description-advantages {
+  .benefits__text{
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--second-text-color);
+    color: $--second-text-color;
   }
   
-  .item-advantages::before{
-  display: block;
-  margin-bottom: 30px;
   
-  content:"";
-  height: 120px;
-  background-size: 70px ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #F5F4FA;;
-  border-radius: 4px;
+  .benefits__icon-antena::before{
+    background-image: url(/images/antena.svg);
   }
-  .antena-icon::before{
-    background-image: url(../images/antenna\ 1.svg);
+  .benefits__icon-clock::before{
+    background-image: url(/images/clock.svg);
   }
-  .clock-icon::before{
-    background-image: url(../images/clock\ 1.svg);
+  .benefits__icon-diagram::before{
+    background-image: url(/images/diagram.svg);
   }
-  .diagram-icon::before{
-    background-image: url(../images/diagram\ 1.svg);
-  }
-  .cosmo-icon::before{
-    background-image: url(../images/astronaut\ 1.svg);
+  .benefits__icon-cosmo::before{
+    background-image: url(/images/cosmo.svg);
   }

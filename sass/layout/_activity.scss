@@ -1,9 +1,9 @@
 
-.section-work{
+.activity{
     padding-bottom: 94px;
   }
   
-  .section-title {
+  .title {
     margin-bottom: 50px;
     text-align: center;
     margin-bottom: 50px;
@@ -11,23 +11,26 @@
     font-size: 36px;
     line-height: 1.16;
   }
-  .list-work{
+  .pictures {
     display: flex;
   }
-  .list-work .item:nth-child(-n + 2){
-    margin-right: 30px;
+  .pictures__item{
+    &:not(:last-child ){
+    margin-right:30px;}
+
   }
-  .description-container{
+  
+  .pictures__wraper{
     position: relative;
   }
   
   
-  .descroption-text {
+  .pictures__text {
     font-weight: 700;
-      line-height: calc(16/14);
-      text-transform: uppercase;
-      color: $--wighte-text-color;
-      display: flex;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+    color: $--wighte-text-color;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;

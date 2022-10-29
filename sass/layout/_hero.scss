@@ -1,4 +1,8 @@
-.hero-container {
+
+  .hero {
+    background-color:&--background-hero-color;
+    text-align: center;
+    padding: 200px 0;
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
@@ -8,16 +12,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
-  }
-  .hero-section {
-    background-color:var(--background-hero-color);
-    text-align: center;
-    padding: 200px 0;
    
   }
   
-  .hero-title {
+  .hero__title {
     margin: 0 auto 30px auto;
     max-width: 696px;
     font-weight: 900;
@@ -28,17 +26,8 @@
     text-transform: uppercase;
   }
   
-  /* --------------секція конопки------------ */
-  .button:hover,
-  .button:focus {
-    background-color:$--button-activ-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
   
-  .container>.button{
-  margin: 0 auto;
-  }
-  .button {
+  .hero_button {
     padding: 10px 32px;
     color:$--wighte-text-color;
     background-color:$--accent-text-color;
@@ -48,6 +37,13 @@
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(background-color);
+    &:hover,
+    &:focus {
+    background-color:$--button-activ-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+   &--centered {margin: 0 auto;
+  }
   }
   
